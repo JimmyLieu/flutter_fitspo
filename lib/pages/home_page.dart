@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_fitspo/util/photo_tile2.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../util/photo_tile.dart';
@@ -89,13 +88,14 @@ class _HomePageState extends State<HomePage> {
                         fontSize: 20, color: Colors.grey.shade600))
               ])),
         ),
-        SizedBox(height: 12),
+        SizedBox(height: 10),
         //Listview Horizontal
         Expanded(
           child: ListView(
+            scrollDirection: Axis.horizontal,
             children: [
               PhotoTile(),
-              PhotoTile1(),
+              PhotoTile(),
               PhotoTile(),
               PhotoTile(),
             ],
