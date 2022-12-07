@@ -7,14 +7,10 @@ class PhotoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 15.0, bottom: 125),
+      padding: const EdgeInsets.all(4),
       child: Container(
-        padding: EdgeInsets.all(6),
-        width: 170,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          color: Colors.grey[800],
-        ),
+        padding: EdgeInsets.all(8),
+        width: 160,
         child: Column(
           // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
